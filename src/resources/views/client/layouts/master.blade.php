@@ -12,11 +12,11 @@
     <link href="{{asset('admins')}}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    {{-- <link rel="stylesheet" href="./Font-Awesomecss/css/font-awesome.min.css"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="{{asset('/images/laravel-logo.png')}}">
     <title>Techstore</title>
+    @livewireStyles
 </head>
 <body>
     <style>
@@ -1294,6 +1294,7 @@
                 </ul>
             </div>
         </div>
+        {{-- <livewire:SelectVoucher :idProduct="$product['id']"> --}}
     @endif
 
     <script src="https://kit.fontawesome.com/f9275dded9.js" crossorigin="anonymous"></script>
@@ -1432,6 +1433,7 @@
     {{-- sliderJs --}}
     {{-- <script src="path-to-the-file/splide.min.js"></script> --}}
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    @livewireScripts
 </body>
 
 </html>

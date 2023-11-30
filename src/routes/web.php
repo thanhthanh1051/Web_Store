@@ -136,5 +136,9 @@ Route::get('home', function(){
     return view('layouts.app');
 });
 
+// Route::livewire('/comment', 'commentt');
+// Route::livewire('/search', 'search');
 
+Route::get('/commnent', [App\Http\Livewire\Commentt::class]);
 
+Route::get('/search', [App\Http\Livewire\Search::class]);

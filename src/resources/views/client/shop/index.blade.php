@@ -233,6 +233,8 @@
     <div class="container" style="max-width: 1270px; margin-top: 16px;">
             {{-- <div class="filter">
             </div> --}}
+            {{-- <a href="/comment">comment</a>
+            <a href="/search">search</a> --}}
             <div class="shell" >
                 <div class="container">
                     <div class="row">

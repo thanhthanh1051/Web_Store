@@ -1,5 +1,6 @@
 @extends('client.layouts.master')
 @section('content')
+
 <style>
     body {
       font-family: Nunito;
@@ -322,41 +323,8 @@
 </div>
 
 <div class="container bootdey">
-  <div class="col-md-12 bootstrap snippets">
-    <div class="panel">
-      <form action="{{route('getComment',['id'=> $product['id']])}}" method="POST">
-        <div class="panel-body">
-            <input name="content" class="form-control" rows="2" placeholder="What are you thinking?" autocomplete="off"/>
-            <div class="mar-top clearfix">
-              <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="fa fa-pencil fa-fw"></i> Share</button>
-            </div>
-        </div>
-        @csrf
-      </form>
-    </div>
-    <div class="panel">
-      @foreach($product->comments as $comment)
-        <div class="panel-body">
-            <div class="media-block">
-              <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="https://bootdey.com/img/Content/avatar/avatar1.png"></a>
-              <div class="media-body">
-                <div class="mar-btm">
-                  <a href="#" class="btn-link text-semibold media-heading box-inline ml-2">{{nameUser($comment->user_id)}}</a>
-                  <p class="text-muted text-sm"><i class="fa fa-lg ml-2"></i>{{ $comment->created_at }}</p>
-                </div>
-                <p class="ml-2">{{ $comment->content }}</p>
-                <div class="pad-ver">
-                    <div class="btn-group">
-                      <i id="likeButton" onclick="toggleLike()" class="btn btn-sm btn-default fa fa-thumbs-up"></i>
-                      <i class="btn btn-sm btn-default fa fa-thumbs-down" style="color:#858796"></i>
-                    </div>
-                </div>
-              <hr>
-              </div>
-            </div>
-        </div>
-      @endforeach
-    </div>
+  {{-- @livewire('commentt', ['idProduct' => $product['id']]) --}}
+  <livewire:commentt :idProduct="$product['id']">
 </div>
   <script>
     function addToCart(id){
@@ -397,19 +365,35 @@
 
         });
     }
-    function toggleLike(){
-      const likeButton = document.getElementById('likeButton');
+    // function toggleLike(){
+    //   const likeButton = document.getElementById('likeButton');
+    //   if(likeButton.style.color = '#858796'){
+    //       likeButton.style.color = '#3498db';
+    //     } else {
+    //       likeButton.style.color = '#858796';
+    //     }
+    // }
+
+
+
+
+  </script>
+
+@section('ext-script')
+<script>
+ function toggleLike(){
+      const likeButton = document.querySelector('likeButton');
       if(likeButton.style.color = '#858796'){
           likeButton.style.color = '#3498db';
         } else {
           likeButton.style.color = '#858796';
         }
     }
-  </script>
+</script>
+@endsection
+
+
 @endif
 @endsection
 
-@section('ext-script')
-
-@endsection
 
