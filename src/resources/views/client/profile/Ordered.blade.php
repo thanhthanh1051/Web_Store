@@ -7,6 +7,10 @@
                           <div class="card" style="border-radius: 10px;margin-bottom:20px;border-color: #cacaca;box-shadow: 2px 2px 3px 3px #cacaca;">
                             <div class="card-body pb-2  ">
                               <div class="d-flex justify-content-between align-items-center mb-1">
+                                <p class="fw-normal mb-0" style="color: #a8729a;">Code Product</p>
+                                <p class="fw-normal mb-0" style="">{{$key->id}}</p>
+                              </div>
+                              <div class="d-flex justify-content-between align-items-center mb-1">
                                 <p class="fw-normal mb-0" style="color: #a8729a;">Name</p>
                                 <p class="fw-normal mb-0" style="">{{$key->name}}</p>
                               </div>

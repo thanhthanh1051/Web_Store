@@ -7,7 +7,7 @@ use Illuminate\Database\Seeder;
 use App\Models\User;
 use DB;
 use Hash;
-class AdminSeeder extends Seeder
+class ClientSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,11 +16,11 @@ class AdminSeeder extends Seeder
     {
         //
         DB::table('users')->insert([
-            'name' => 'admin',
-            'email' => 'admin123@gmail.com',
-            'role' => 'admin',
-            'password' => Hash::make('admin123'),
-            'rank_id' => null
+            'name' => 'user',
+            'email' => 'user123@gmail.com',
+            'role' => 'user',
+            'password' => Hash::make('user123'),
+            'rank_id' => 1
         ]);
     }
 }

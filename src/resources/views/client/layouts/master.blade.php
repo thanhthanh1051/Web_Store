@@ -1063,7 +1063,7 @@
                                                     </a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="{{route('shop')}}" class="rm-rf underline-hover-effect">
+                                                    <a href="/shop" class="rm-rf underline-hover-effect">
                                                         <div class="menu-item-wrap">
                                                             <span class="menu-item-title">Shop</span>
                                                         </div>
@@ -1197,8 +1197,14 @@
                                         <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                                     </div>
                                     <span class="subtitle-login-forn">or use your account</span>
-                                    <input type="email" placeholder="Email" class="inp-login-form" name="email" required/>
-                                    <input type="password" placeholder="Password" class="inp-login-form" name="password" required/>
+                                    <input type="email" placeholder="Email" class="inp-login-form" name="email"/>
+                                    @error('email')
+                                    <span style="color: red">{{$message}}</span>
+                                    @enderror
+                                    <input type="password" placeholder="Password" class="inp-login-form" name="password"/>
+                                    @error('password')
+                                    <span style="color: red">{{$message}}</span>
+                                    @enderror
                                     <a class="forgot-pass-link" href="#">Forgot your password?</a>
                                     <button class="btn-login-form" type="submit">Sign In</button>
                                     @csrf

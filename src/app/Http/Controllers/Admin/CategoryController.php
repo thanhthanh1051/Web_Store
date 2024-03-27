@@ -22,7 +22,7 @@ class CategoryController extends Controller
     }
     public function postAdd(Request $req){
         $req ->validate([
-            'name' => 'required | unique:brands',
+            'name' => 'required | unique:categories',
             'description' => 'required | string'
         ]);
         $category = new Category;

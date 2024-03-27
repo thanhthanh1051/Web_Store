@@ -1,11 +1,11 @@
 # WEBSITE SELLING ELECTRONIC COMPONENTS 📱
 ***
 ## Hi Guys 🌷
-### Welcome back to my team 🌏 
+### Welcome to my project 🌏 
 
 ![panda](https://cdn.tgdd.vn//GameApp/-1//Hinhnenbachugau23-Kichthuoc1920x1080-800x450.jpg)
 ***
-_🌷We are future programmers. We want to bring new and attractive software🌷_
+_🌷I'm future programmers. I want to bring new and attractive software🌷_
 
  ### 📌 Target 
 👉 Website selling electronic devices
@@ -18,9 +18,9 @@ We will use those technologies in our project
 ### 🍩 My Team
 |  Name  |  Work  |  Contact 📞  |
 | :----: | :----: | :-------: |
-| 👻 Trần Vũ Hoàng Sơn | FullStack | [Tran Vu Hoang Son](https://www.facebook.com/sonhoang2071?mibextid=ZbWKwL) |
-| 🐰 Tô Lệ Thanh | FullStack | [Tô Lệ Thanh](https://www.facebook.com/profile.php?id=100015695650617&mibextid=ZbWKwL) |
-| 🐧 Trương Quốc Huy | FullStack | [Trương Quốc Huy](https://www.facebook.com/gau.trang.372661?mibextid=ZbWKwL) |
+| 👻 Trần Vũ Hoàng Sơn | DevOps | [Tran Vu Hoang Son](https://www.facebook.com/sonhoang2071?mibextid=ZbWKwL) |
+| 🐰 Tô Lệ Thanh | Back-end, Front-end | [Tô Lệ Thanh](https://www.facebook.com/profile.php?id=100015695650617&mibextid=ZbWKwL) |
+| 🐧 Trương Quốc Huy | Front-end | [Trương Quốc Huy](https://www.facebook.com/gau.trang.372661?mibextid=ZbWKwL) |
 
 ### _💌 Thank you for taking the time to read our profile_
 ***

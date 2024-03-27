@@ -7,6 +7,9 @@ use App\Http\Controllers\Admin\BrandController as AdminBrandController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Client\DashboardController as ClientDashboardController;
 use App\Http\Controllers\Client\ProductController as ClientProductController;
+
+use App\Livewire\ShowProduct;
+
 use App\Http\Controllers\MyAuth\AuthController;
 use App\Http\Controllers\Admin\DiscountController;
 use App\Http\Controllers\Admin\RankController;
@@ -142,3 +145,4 @@ Route::get('home', function(){
 Route::get('/commnent', [App\Http\Livewire\Commentt::class]);
 
 Route::get('/search', [App\Http\Livewire\Search::class]);
+// Route::get('/shop', ShowProduct::class)->name('shop');

@@ -28,6 +28,7 @@ class DiscountController extends Controller
     public function postAdd(Request $request){
         $request->validate([
             'name'=>'required',
+            'code' => 'required | unique:discounts',
             'price' => 'required',
             'rank' => 'required',
             'amount' => 'required | integer | min:20',

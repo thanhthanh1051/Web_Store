@@ -43,7 +43,9 @@ class Rank extends Model
     public function setupRank($id){
         if(!empty($id)){
             $allPrice = Order::where('user_id',$id)->select('total')->get();
-            $idRank = User::where('id',$id)->select('rank_id')->get();
+            // $idRank = User::where('id',$id)->select('rank_id')->get();
+            $user = User::find($id);
+            $idRank = $user->rank_id; // Gán giá trị rank_id mặc định
 
             if(!empty($allPrice)){
                 $price = 0;
